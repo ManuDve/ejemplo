@@ -2,7 +2,8 @@
   <section v-if="nuevasNovelas">
     <div v-for="novela in nuevasNovelas" :key="novela.id">
       <h2>{{ novela.title }}</h2>
-      <img :src="novela.thumbnail.path + '.jpg'" alt="">
+      <img v-if="novela.images[0]" :src="novela.images[0].path + '.jpg'" alt="">
+      <img v-else :src="novela.thumbnail.path + '.jpg'" alt="">
       <p>Paginas: {{ novela.pageCount }}</p>
       <p>ISBN: {{ novela.isbn }}</p>
       <p><strong>Descripción: </strong> {{ novela.description }}</p>
