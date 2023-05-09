@@ -38,3 +38,28 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+section {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+div {
+  max-width: 500px;
+  font-size: 0.9rem;
+  border: 1px solid #e9e9e9;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+img {
+max-width: 400px;
+}
+
+</style>
